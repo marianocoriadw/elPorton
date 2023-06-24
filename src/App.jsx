@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import ItemListContainer from "./components/ItemListContainer";
-import ItemFilter from "./components/ItemFilter";
 import Footer from "./components/Footer";
 import CartProducts from "./components/CartProducts";
 import { CustomProviders } from "./context/Context";
@@ -16,7 +15,8 @@ function App() {
       < Header />
       <Routes>
         <Route path="/" element={  <ItemListContainer />} />
-        <Route path='/category/:id' element={ <ItemFilter />}/>
+        <Route path="/products" element={  <ItemListContainer />} />
+        <Route path='/category/:id' element={ <ItemListContainer />}/>
         <Route path='/pedido' element={ <CartProducts/>}/>
       </Routes>
     </CustomProviders>
