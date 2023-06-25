@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {NavLink , Link} from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo2.png';
 import Cart from '../components/Cart';
 import { RiMenuFill, RiCloseCircleLine } from "react-icons/ri";
 
