@@ -52,7 +52,7 @@ const restar = () =>{
     { !id ?< Carrusel /> : null }
     {/* Contenedor de los productos */}
      
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4 bg-[#e6e6e6] p-10 pt-20'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-4 bg-[#e6e6e6] p-10 pt-20 min-h-[92vh]'>
       <h1 className='text-4xl text-center pt-4 font-bold col-span-1 sm:col-span-2 lg:col-span-4'>Hace tu pedido</h1>
       {
         products.map( (p) => (

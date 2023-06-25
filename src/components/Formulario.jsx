@@ -22,7 +22,7 @@ const enviar = (data) => {
         icon: 'success',
         title: 'Compra existosa',
         showConfirmButton: false,
-        timer: 1500
+        timer:2000
       })
 }
 

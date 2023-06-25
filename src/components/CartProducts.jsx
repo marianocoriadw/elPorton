@@ -11,14 +11,14 @@ const {cart, eliminar , total} = useContext(Context);
 
   return (
     <>
-    <div className='pt-12 w-full bg-gray-200 rounded-xl shadow-xl'>
-     <div className='w-full md:w-[60%] h-auto bg-gray-300 mx-auto mt-10 rounded-xl'>
+    <div className='pt-12 w-full min-h-[92vh] bg-gray-200 rounded-xl shadow-xl'>
+     <div className='w-[90%]  md:w-[60%] h-auto bg-gray-300 mx-auto mt-10 rounded-xl'>
       <div className='grid lg:grid-cols-3'>
         <h1 className='grid col-span-3 text-center text-3xl lg:text-5xl text-black p-5 border-b border-black font-bold'>Tu compra</h1>
         <div className='grid col-span-3 gap-1'>
           { cart.length === 0 
           ? 
-          <div className='grid col-span-3 text-3xl text-black m-5'>
+          <div className='grid col-span-3 text-3xl text-black m-5 min-h-[40vh]'>
             <div className='flex justify-center items-center gap-3'>
               <h1 >Vacio, ir a comprar</h1>
               <Link to='/products'>
