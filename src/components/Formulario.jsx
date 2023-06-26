@@ -34,32 +34,32 @@ const enviar = (data) => {
         <h1 className='grid col-span-3 text-center pt-5  text-3xl text-black'>Completa tus datos</h1>
         {/* Formulario */}
         <form onSubmit={handleSubmit(enviar)}
-        className='grid col-span-3 justify-center gap-2 mx-auto'>
+        className='grid col-span-3 justify-center gap-2 mx-auto w-full'>
             <div className='flex flex-col text-2xl gap-2'>
                 <label>Nombre</label>
                 <input type="text" 
                 {...register('nombre' , {
                     required: true
                 })}
-                className='rounded px-3' />
+                className='rounded px-3 w-full' />
                 {errors.nombre?.type === 'required' && <p className='text-xl text-[red]'>Este campo es necesario</p>}
             </div>
-            <div className='flex flex-col  text-2xl gap-1'>
+            <div className='flex flex-col text-2xl gap-1 w-full'>
                 <label>Apellido</label>
                 <input type="text"
                 {...register('apellido' , {
                     required: true
                 })} 
-                className='rounded px-3'/>
+                className='rounded px-3 w-full'/>
                 {errors.apellido?.type === 'required' && <p className='text-xl text-[red]'>Este campo es necesario</p>}
             </div>
-            <div className='flex flex-col text-2xl gap-1'>
+            <div className='flex flex-col text-2xl gap-1 w-full'>
                 <label>Telefono</label>
                 <input type="number"
                 {...register('telefono' , {
                     required: true
                 })} 
-                className='rounded px-3'/>
+                className='rounded px-3 w-full'/>
                  {errors.telefono?.type === 'required' && <p className='text-xl text-[red]'>Este campo es necesario</p>}
             </div>
             <div className='text-center m-5 mb-8 p-2 text-2xl rounded-xl text-black font-bold border-black bg-[#eed763]'>

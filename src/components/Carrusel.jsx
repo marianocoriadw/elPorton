@@ -10,9 +10,9 @@ import imagen3 from '../assets/bannersandwich.png'
 
 function Carrusel() {
   return (
-    <div className='pt-20 w-full'>
+    <div className='pt-20 w-full md:h-[90vh]'>
       <Swiper
-       
+       className='h-full'
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}

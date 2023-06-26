@@ -1,14 +1,11 @@
-import React,{useState} from 'react'
-const [count , setCount] = useState(1)
+import React from 'react'
 
-const incrementar = () =>{
-  setCount (count + 1)
-}
-const restar = () =>{
-  setCount(count - 1)
-}
 
-function Count() {
+
+function Count({count, restar, incrementar}) {
+
+
+
   return (
     <>
     {/* Contador */}
